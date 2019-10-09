@@ -6,6 +6,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Modal -->
+    <div id="playerModal" class="modal">
+    <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+              <h2>Choose Your Character!</h2>
+          </div>
+          <div class="modal-body">
+            <p>You can change your character at any time by steping on the selector.</p>
+            <ul class="characters">
+              <li><img src="images/char-horn-girl.png" alt="horn girl" onclick="selectPlayer(this);"></li>
+              <li ><img id="default" src="images/char-boy.png" alt="boy" onclick="selectPlayer(this);"></li>
+              <li><img src="images/char-cat-girl.png" alt="cat girl" onclick="selectPlayer(this);"></li>
+              <li><img src="images/char-princess-girl.png" alt="princess girl" onclick="selectPlayer(this);"></li>
+            </ul>
+          </div>
+
+          <div class="modal-footer">
+              <button type="button" onclick="selectPlayer('default')">Skip</button>
+          </div>
+        </div>
+    </div>
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
