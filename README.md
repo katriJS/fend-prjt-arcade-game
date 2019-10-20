@@ -22,6 +22,8 @@ This game is a simple take on the classic Frogger Aracade game. It is based in J
  $ git clone https://github.com/katriJS/fend-prjt-arcade-game.git
  ```
 
+Open index.html in your browser of choice to begin playing the game.
+
 ## Contributing
 
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.

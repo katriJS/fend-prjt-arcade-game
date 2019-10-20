@@ -9,7 +9,7 @@ const sprites = {
         'horn girl': 'images/char-horn-girl.png',
         'cat girl': 'images/char-cat-girl.png',
         'princess girl': 'images/char-princess-girl.png'
-    };
+};
 
 const SCREEN_WIDTH = 400;
 let GAME_START =  false;
@@ -73,12 +73,12 @@ function Enemy(x, y, w, h, src)  {
 }
 
 Enemy.prototype = Object.create(Asset.prototype, {
-                  constructor: {
-                      configurable: true,
-                      enumerable: true,
-                      value: Enemy,
-                      writable: true
-                  }
+  constructor: {
+    configurable: true,
+    enumerable: true,
+    value: Enemy,
+    writable: true
+  }
 });
 
 // Update the enemy's position, required method for game
@@ -88,7 +88,7 @@ Enemy.prototype.update = function(dt, player) {
     // game runs at the same speed for all computers.
     if(GAME_START) {
       this.x += this.speed * dt;
-      
+
       if(this.x > SCREEN_WIDTH){
         this.x = -100; //off screen
         this.speed = 50 + Math.floor(Math.random() * 201);
@@ -116,12 +116,12 @@ function Player (x, y, w, h, src) {
 }
 
 Player.prototype = Object.create(Asset.prototype, {
-                  constructor: {
-                      configurable: true,
-                      enumerable: true,
-                      value: Player,
-                      writable: true
-                  }
+  constructor: {
+    configurable: true,
+    enumerable: true,
+    value: Player,
+    writable: true
+  }
 });
 
 //Choose a player
