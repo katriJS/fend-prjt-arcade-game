@@ -26,11 +26,17 @@ This game is a simple take on the classic Frogger Arcade game. It is based in Ja
 
 Open index.html in your browser of choice to begin playing the game.
 
-You can select your Character at the beginning of the game from the Player Section Menu or you can skip this step by clicking the 'Skip' button or by clicking anywhere outside the menu. If you do not select a
-character, the default character will by assigned. You may change your character selection at any time by standing on the Star Selector while pressing the SPACE bar on your keyboard.
+You can select your character at the beginning of the game from the Player Section Menu. You can skip this step by clicking the 'Skip' button or by clicking anywhere outside the menu. If you do not select a
+character, the default character will be assigned. You may change your character selection at any time by standing on the Star Selector while pressing the SPACE bar on your keyboard.
 
 Use your keyboard arrow keys to navigate your character around enemies to reach the water. The game is won when you successfully reach the water without being hit by an enemy bug. If you are hit by an enemy, the game will reset and you will have to begin from the starting position again.
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This repository is for a Udacity FEND project. Therefore, pull requests are not accepted.
+
+
+[//]: # (reference links)
+
+   [Udacity Front-end Nanaodegree]: <https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011>
+   [zip]: <https://github.com/katriJS/fend-prjt-arcade-game/archive/master.zip>
