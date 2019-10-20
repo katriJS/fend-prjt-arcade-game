@@ -1,6 +1,8 @@
 const canvas = document.querySelector('canvas');
 const playerModal = document.getElementById('playerModal');
 const gameOverModal = document.getElementById('gameoverModal');
+let button = playerModal.querySelector('button');
+button.focus();
 
 const sprites = {
         'boy': 'images/char-boy.png',
@@ -54,8 +56,6 @@ Asset.prototype.collisionDetected = function(sprite) {
 
   if(sprite.x > x_min && sprite.x <= x_max &&
      sprite.y > y_min && sprite.y <= y_max) {
-       console.log(Math.floor(x_min),' < p-x: ',sprite.x,' < ',Math.floor(x_max));
-       console.log(Math.floor(y_min),' < p-y: ',sprite.y,' < ',Math.floor(y_max));
        return true;
   }
     return false;
@@ -87,8 +87,8 @@ Enemy.prototype.update = function(dt, player) {
     // Multiply any movement by the dt parameter to ensure the
     // game runs at the same speed for all computers.
     if(GAME_START) {
-
       this.x += this.speed * dt;
+      
       if(this.x > SCREEN_WIDTH){
         this.x = -100; //off screen
         this.speed = 50 + Math.floor(Math.random() * 201);
@@ -205,8 +205,7 @@ const allEnemies = [new Enemy(10, 65, 70, 60, 'images/enemy-bug.png'),
                     new Enemy(10, 230, 70, 60, 'images/enemy-bug.png')];
 
 const selector = new Asset(200, 400, 50, 42, 'images/Selector.png');
-let button = playerModal.querySelector('button');
-button.focus();
+
 
 
 
@@ -217,7 +216,6 @@ button.focus();
 */
 function selectPlayer(selection) {
   GAME_START = true;
-
 
   if(selection === 'default') {
     selection = document.getElementById('default');
@@ -232,7 +230,7 @@ function selectPlayer(selection) {
 
 /**
 * @description Win or Lose Modal feedback
-* @param {'string'} m - the message to display in Modal
+* @param {'string'} msg - the message to display in Modal
 */
 function feedback(msg) {
 
